@@ -30,6 +30,6 @@ sudo chown zabbix:zabbix /lib/zabbix//lib/zabbix/externalscripts/ipmi*.py
 sudo chmod a+x /lib/zabbix//lib/zabbix/externalscripts/ipmi*.py
 ```
 
-3.注意给临时文件赋予zabbix的读写权限，脚本中为/var/tmp/
+3. 注意给临时文件赋予zabbix的读写权限，脚本中为/var/tmp/
 
 4. 导入监控脚本，添加主机。接口保持不变，设置宏，左侧填入{$SERVER}，右侧填入设备的IP地址（管理地址）。
