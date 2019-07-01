@@ -35,6 +35,7 @@ def create_ipmi_file():
     count = 0
     while len(ipmi_list) == 0 and count < 5:
         ipmi_list = os.popen(ipmi_cmd).readlines()
+        count += 1
     if (os.path.exists(cache_file)) and os.path.getsize(cache_file) > 100:
         return
     if os.path.exists(cache_file):
