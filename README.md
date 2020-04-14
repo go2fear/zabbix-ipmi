@@ -23,11 +23,11 @@ sudo apt-get install freeipmi-tools
 
 freeipmi[官网]: https://www.gnu.org/software/freeipmi/download.html
 
-2. 将python文件下载后放入外部脚本目录（/lib/zabbix//lib/zabbix/externalscripts/）,给脚本相应权限。
+2. 将python文件下载后放入外部脚本目录（/lib/zabbix/externalscripts/）,给脚本相应权限。
 
 ```shell
-sudo chown zabbix:zabbix /lib/zabbix//lib/zabbix/externalscripts/ipmi*.py
-sudo chmod a+x /lib/zabbix//lib/zabbix/externalscripts/ipmi*.py
+sudo chown zabbix:zabbix /lib/zabbix/externalscripts/ipmi*.py
+sudo chmod a+x /lib/zabbix/externalscripts/ipmi*.py
 ```
 
 3. 修改脚本中的ipmi账号密码为自己设备的账号密码。
